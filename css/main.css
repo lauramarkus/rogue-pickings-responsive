@@ -13,18 +13,6 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 1em;
-	height: 100%;
-}
-
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	flex-wrap: wrap;	
 }
 
 h1,
@@ -54,22 +42,39 @@ p {
     padding: 0 30px;
 }
 
+.container{
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;	
+}
+
+.container{
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;	
+}
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
+	height: 98%;
 	width: 98%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
+	align-content: space-between;
+	flex-flow: row wrap;
 }
 
 header h1 {
-	margin: 0;
-	padding: 38px 0;
+	padding: 20px 0;
+	border-bottom: 3px solid #77a466;
 	
 }
 header h1 span {
@@ -77,29 +82,31 @@ header h1 span {
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 0px 0px 10px 0px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 header nav ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	text-align: center;
 }
 
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
-	padding: 0 10px;
+	padding: 10px;
 }
 
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
 }
+
 
 /*The widths are in a percentage!*/
 .top-section,
@@ -151,13 +158,12 @@ header nav ul li a{
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	text-align:left;
 }
 
 .section-two h4,
 .section-three h4 {
-	padding: 10px 30px;
+	padding: 10px 0px;
 }
 
 .menu {
@@ -173,11 +179,13 @@ header nav ul li a{
 	color: #333;
 	font-size: 16px;
 	line-height: 21px;
+	padding: 10px 0;
 }
 
 .address {
 	font-size: 16px;
 	line-height: 24px;
+	padding: 0px 0
 }
 
 /*The widths are in a percentage!*/
