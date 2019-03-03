@@ -194,14 +194,24 @@ footer span {
 	color: #77a466;
 	font-size: 14px;
 }
-@ media all and (min-width:768px) {
-	/*** TABLET STYLES HERE ***/
-
-
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+ 
+	.bottom-section{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	.section-one{
+		order: 3;
+	}
+	.section-two{
+		order: 2;
+	}
+	.section-three{
+		order: 1;
+	}
 }
-
-@ media and all (min-width: 1200px) {
-	/***DESKTOP STYLES HERE ***/
-
-
-}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
