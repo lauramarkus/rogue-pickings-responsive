@@ -48,22 +48,13 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-flow: row wrap;	
-}
-
-.container{
-	max-width: 1200px;
-	width: 90%;
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-flow: row wrap;	
+	flex-flow: row wrap;
 }
 
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
-	height: 98%;
 	width: 98%;
 	display: flex;
 	align-items: center;
@@ -114,9 +105,7 @@ header nav ul li a{
 	margin: 0 auto;
 	width: 98%;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+	flex-direction: row-reverse;
 	flex-wrap: wrap;
 }
 
@@ -204,4 +193,86 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
+}
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+ 
+	header{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: space-between;
+		flex-flow: column;
+	}
+	
+	.bottom-section{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	.section-one{
+		order: 1;
+		width: 29%;
+	}
+	.section-two{
+		order: 2;
+		width: 33%;
+		border-left: solid #eee 1px;
+		border-right: solid #eee 1px;
+		padding-left: 12px;
+	}
+	.section-three{
+		order: 3;
+		width: 33%;
+		padding-left: 12px;
+		}
+}
+ 
+@media all and (min-width:1200px) {
+	/* Desktop styles here */
+
+	header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	padding-top: 15px;
+	}
+	
+	header h1 {
+	padding: 20px 0;
+	border-bottom: none;
+	}
+
+	header nav ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.section-two{
+		order: 2;
+		width: 33%;
+		border-left: solid #eee 1px;
+		border-right: solid #eee 1px;
+		padding-right: 20px;
+		padding-left: 10px;
+	}
+
+	.section-three{
+		order: 3;
+		width: 33%;
+		padding-left: 20px;
+		}
+
+	.top-section,{
+		margin: 0 auto;
+		width: 98%;
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+		}
 }
